@@ -1,0 +1,12 @@
+#!/bin/sh -ex
+
+# configure postgres to listen for remote connections
+CONF=/etc/postgresql/8.4/main/postgresql.conf
+sed --in-place "s/#listen_addresses = 'localhost'/listen_addresses = '*'/" $CONF
+
+# configure postgres to accept remote connections
+cat >> /etc/postgresql/8.4/main/pg_hba.conf <<EOF
+# Accept all IPv4 connections - CHANGE THIS!!!
+host    all         all         0.0.0.0/0             md5
+EOF
+

@@ -1,0 +1,25 @@
+#!/bin/sh -e
+
+# Enable redirection to force phppgadmin to use ssl
+sed -i "/^#.*\"mod_redirect\"/ s/#/ /" /etc/lighttpd/lighttpd.conf
+
+# Configure lighttpd for phppgadmin
+cat > /etc/phppgadmin/lighttpd.conf <<EOF
+\$SERVER["socket"] == ":80" {
+    \$HTTP["host"] =~ "(.*)" {
+        url.redirect = ( "^/(.*)" => "https://%1/$1" )
+    }
+}
+
+\$HTTP["url"] =~ "^/" {
+    server.document-root = "/usr/share/phppgadmin"
+}
+EOF
+
+# Remove debian configuration for localhost as it conflicts with phppgadmin
+sed -i "/^#### handle Debian Policy Manual/,/^}/d" /etc/lighttpd/lighttpd.conf
+
+ln -s /etc/phppgadmin/lighttpd.conf /etc/lighttpd/conf-available/50-phppgadmin.conf
+lighty-enable-mod fastcgi
+lighty-enable-mod phppgadmin
+
