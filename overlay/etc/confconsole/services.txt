@@ -1,5 +1,5 @@
+PHPPgAdmin: https://$ipaddr
 Web shell:  https://$ipaddr:12320
 Webmin:     https://$ipaddr:12321
-PHPPgAdmin: https://$ipaddr
 SSH/SFTP:   root@$ipaddr (port 22)
 PostgreSQL: psql -U postgres -h $ipaddr
