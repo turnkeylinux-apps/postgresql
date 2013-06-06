@@ -1,6 +1,6 @@
 turnkey-postgresql-12.1 (1) turnkey; urgency=low
 
-  * Latest version of PostgreSQL will be installed at build time.
+  * Latest Debian Squeeze package version of PostgreSQL.
 
   * Note: Please refer to turnkey-core's changelog for changes common to all
     appliances. Here we only describe changes specific to this appliance.
