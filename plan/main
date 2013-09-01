@@ -2,7 +2,7 @@
 
 postgresql
 postgresql-contrib
-postgresql-8.4-postgis
+postgresql-9.1-postgis
 
 phppgadmin
 lighttpd                 /* we use lighty to power phppgadmin */
