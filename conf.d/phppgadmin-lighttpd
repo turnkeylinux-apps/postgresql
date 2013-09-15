@@ -20,6 +20,6 @@ EOF
 sed -i "/^#### handle Debian Policy Manual/,/^}/d" /etc/lighttpd/lighttpd.conf
 
 ln -s /etc/phppgadmin/lighttpd.conf /etc/lighttpd/conf-available/50-phppgadmin.conf
-lighty-enable-mod fastcgi
-lighty-enable-mod phppgadmin
+lighty-enable-mod fastcgi || true
+lighty-enable-mod phppgadmin || true
 
