@@ -22,7 +22,7 @@ and on top of that:
   all interfaces by default, and accept connections from all hosts. In a
   production environment, it is recommended to limit incoming
   connections to specific hosts by configuring *Host* and *User* access
-  in */etc/postgresql/8.4/main/pg\_hba.conf*.
+  in */etc/postgresql/9.1/main/pg\_hba.conf*.
 - PostgreSQL password encryption enabled by default (security).
 - The *postgres* user is trusted when connecting over local unix sockets
   (convenience).
