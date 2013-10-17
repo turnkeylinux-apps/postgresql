@@ -16,7 +16,7 @@ This appliance includes all the standard features in `TurnKey Core`_,
 and on top of that:
 
 - `PHPPgAdmin`_ administration frontend for PostgreSQL (listening on
-  port 12322 - uses SSL).
+  port 443 - uses SSL).
 - Webmin modules for configuring Apache2, PHP and PostgreSQL.
 - PostgreSQL is configured to listen on its default port (5432/tcp) on
   all interfaces by default, and accept connections from all hosts. In a
