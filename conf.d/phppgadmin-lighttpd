@@ -5,7 +5,7 @@ sed -i "/^#.*\"mod_redirect\"/ s/#/ /" /etc/lighttpd/lighttpd.conf
 
 # Configure lighttpd for phppgadmin
 cat > /etc/phppgadmin/lighttpd.conf <<EOF
-\$SERVER["socket"] == ":80" {
+\$SERVER["socket"] == ":12323" {
     \$HTTP["host"] =~ "(.*)" {
         url.redirect = ( "^/(.*)" => "https://%1/$1" )
     }
