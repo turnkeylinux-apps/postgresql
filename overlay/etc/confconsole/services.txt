@@ -1,5 +1,8 @@
-PHPPgAdmin: https://$ipaddr
+Unconfigured: (Port 80) To be set by user if used.
 Web shell:  https://$ipaddr:12320
 Webmin:     https://$ipaddr:12321
+Adminer:    https://$ipaddr:12322
+PHPPgAdmin: https://$ipaddr:12323
+WebConsole: https://$ipaddr:12325
 SSH/SFTP:   root@$ipaddr (port 22)
 PostgreSQL: psql -U postgres -h $ipaddr
