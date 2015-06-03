@@ -4,8 +4,4 @@ postgresql
 postgresql-contrib
 postgresql-9.4-postgis
 
-phppgadmin
-lighttpd                 /* we use lighty to power phppgadmin */
-php5-cgi                 /* needed for lighty cgi and phppgadmin depend */
-
 webmin-postgresql        /* webmin is in base, give the user the option */

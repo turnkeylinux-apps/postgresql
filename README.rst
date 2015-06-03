@@ -15,9 +15,7 @@ environments.
 This appliance includes all the standard features in `TurnKey Core`_,
 and on top of that:
 
-- `PHPPgAdmin`_ administration frontend for PostgreSQL (listening on
-  port 443 - uses SSL).
-- Webmin modules for configuring Apache2, PHP and PostgreSQL.
+- Webmin modules for configuring PostgreSQL.
 - PostgreSQL is configured to listen on its default port (5432/tcp) on
   all interfaces by default, and accept connections from all hosts. In a
   production environment, it is recommended to limit incoming
@@ -32,11 +30,10 @@ Credentials *(passwords set at first boot)*
 -------------------------------------------
 
 -  Webmin, SSH: username **root**
--  postgresql, phppgadmin: username **postgres**
+-  postgresql: username **postgres**
 
 
 .. _PostgreSQL: http://www.postgresql.org/
 .. _comparison: http://www.wikivs.com/wiki/MySQL_vs_PostgreSQL
 .. _TurnKey Core: http://www.turnkeylinux.org/core
-.. _PHPPgAdmin: http://phppgadmin.sourceforge.net/
 .. _PostGIS: http://postgis.refractions.net
