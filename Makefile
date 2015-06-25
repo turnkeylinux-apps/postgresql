@@ -1,6 +1,6 @@
 WEBMIN_FW_TCP_INCOMING = 22 80 443 5432 12320 12321
 
-COMMON_OVERLAYS += adminer-lighttpd
+COMMON_OVERLAYS += adminer
 COMMON_CONF += adminer-lighttpd
 
 include $(FAB_PATH)/common/mk/turnkey/pgsql.mk

@@ -12,3 +12,17 @@ cat >> /etc/postgresql/$PGSQL_VER/main/pg_hba.conf <<EOF
 host    all         all         0.0.0.0/0             md5
 EOF
 
+
+# Adminer config
+
+# Adminer file to edit database includes
+ADB_CONF=/usr/share/adminer/adminer/include/bootstrap.inc.php
+
+# Remove all other database drivers so PostgreSQL is default
+# TODO HERE
+
+# Change default server to localhost
+# TODO
+
+
+
