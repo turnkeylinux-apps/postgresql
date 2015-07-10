@@ -2,6 +2,7 @@
 
 PGSQL_VER=$(ls /etc/postgresql/)
 
+
 # configure postgres to listen for remote connections
 CONF=/etc/postgresql/$PGSQL_VER/main/postgresql.conf
 sed --in-place "s/#listen_addresses = 'localhost'/listen_addresses = '*'/" $CONF
@@ -13,16 +14,11 @@ host    all         all         0.0.0.0/0             md5
 EOF
 
 
-# Adminer config
+# Customize the control panel
 
-# Adminer file to edit database includes
-ADB_CONF=/usr/share/adminer/adminer/include/bootstrap.inc.php
+# Add the App Name
 
-# Remove all other database drivers so PostgreSQL is default
-# TODO HERE
+# Add Control Panel Icon
 
-# Change default server to localhost
-# TODO
-
-
+# Add Referances
 
