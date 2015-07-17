@@ -14,11 +14,5 @@ host    all         all         0.0.0.0/0             md5
 EOF
 
 
-# Customize the control panel
-
-# Add the App Name
-
-# Add Control Panel Icon
-
-# Add Referances
-
+# enable tklcp site
+lighty-enable-mod tklcp || true
