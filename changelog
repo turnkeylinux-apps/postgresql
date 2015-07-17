@@ -1,3 +1,16 @@
+turnkey-postgresql-14.0 (1) turnkey; urgency=low
+
+  * PostgreSQL:
+
+    - Latest Debian Jessie package version of PostgreSQL.
+    - Build error due to new postgis package [#377][#383].
+    - Update from phppgadmin to adminer [#387].
+
+  * Note: Please refer to turnkey-core's changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Ken Robinson <ken@robinsonshome.net>  Fri Jul 17 06:02:00 2015 -0400
+
 turnkey-postgresql-13.0 (1) turnkey; urgency=low
 
   * PostgreSQL:
