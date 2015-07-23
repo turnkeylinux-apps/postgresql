@@ -2,6 +2,7 @@
 
 PGSQL_VER=$(ls /etc/postgresql/)
 
+
 # configure postgres to listen for remote connections
 CONF=/etc/postgresql/$PGSQL_VER/main/postgresql.conf
 sed --in-place "s/#listen_addresses = 'localhost'/listen_addresses = '*'/" $CONF
@@ -12,3 +13,6 @@ cat >> /etc/postgresql/$PGSQL_VER/main/pg_hba.conf <<EOF
 host    all         all         0.0.0.0/0             md5
 EOF
 
+
+# enable tklcp site
+lighty-enable-mod tklcp || true
