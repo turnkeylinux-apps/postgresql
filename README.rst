@@ -38,6 +38,6 @@ Credentials *(passwords set at first boot)*
 	
 .. _PostgreSQL: http://www.postgresql.org/
 .. _comparison: http://www.wikivs.com/wiki/MySQL_vs_PostgreSQL
-.. _TurnKey Core: http://www.turnkeylinux.org/core
+.. _TurnKey Core: https://www.turnkeylinux.org/core
 .. _Adminer: http://adminer.org/
 .. _PostGIS: http://postgis.refractions.net
