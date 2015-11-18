@@ -52,7 +52,7 @@
                     <h2>Resources and references</h2>
                     <ul>
                         <li><a
-                        href="http://www.turnkeylinux.org/postgresql">
+                        href="https://www.turnkeylinux.org/postgresql">
                         TurnKey PostgreSQL release notes</a></li>
                     </ul>
 
