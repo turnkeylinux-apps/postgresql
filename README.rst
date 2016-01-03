@@ -1,4 +1,4 @@
-PostgreSQL - Object-relational Database System
+PostgreSQL - Object relational Database System
 ==============================================
 
 `PostgreSQL`_ is a fully featured object-relational database with many
