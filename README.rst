@@ -1,5 +1,5 @@
-PostgreSQL - Object relational Database System
-==============================================
+PostgreSQL - Advanced Object-relational Database System
+=======================================================
 
 `PostgreSQL`_ is a fully featured object-relational database with many
 enterprise features: ACID transactions, inheritance, unicode and strong
