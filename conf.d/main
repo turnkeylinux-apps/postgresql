@@ -13,6 +13,8 @@ cat >> /etc/postgresql/$PGSQL_VER/main/pg_hba.conf <<EOF
 host    all         all         0.0.0.0/0             md5
 EOF
 
+sed -Ei "s|^(server.document-root.*=).*|\1 \"/var/www\"|" /etc/lighttpd/lighttpd.conf
+sed -Ei "s|^(server.port.*=).*|\1 80|" /etc/lighttpd/lighttpd.conf
 
 # enable tklcp site
 lighty-enable-mod tklcp || true
