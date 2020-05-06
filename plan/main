@@ -1,12 +1,11 @@
 #include <turnkey/base>
 
-postgresql-9.6
-postgresql-contrib-9.6
-postgresql-9.6-postgis-2.3
+postgresql-11
+postgresql-11-postgis-2.3
 
-adminer			 /* Adminer - Replaces phpPgAdmin */
-lighttpd                 /* we use lighty to power adminer */
-php-cgi                 /* needed for lighty cgi and adminer depend */
-php-pgsql		 /* needed for adminer pg support */
+adminer             /* Adminer - Provides WebUI for PgSQL */
+lighttpd            /* we use lighty to power adminer */
+php-cgi             /* needed for lighty cgi and adminer depend */
+php-pgsql           /* needed for adminer pg support */
 
-webmin-postgresql        /* webmin is in base, give the user the option */
+webmin-postgresql   /* webmin is in base, give the user the option */

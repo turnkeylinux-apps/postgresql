@@ -1,3 +1,16 @@
+turnkey-postgresql-16.0 (1) turnkey; urgency=low
+
+  * Updated PostgreSQL to latest Debian Buster package - v11.
+
+  * Dependencies for postgresql-x.x-postgis-y.y package have been fixed so
+    we no longer need to consider removing it from the build (i.e. nothing to
+    do on our end) - closes #1154.
+
+  * Note: Please refer to turnkey-core's changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Jeremy Davis <jeremy@turnkeylinux.org>  Wed, 06 May 2020 13:06:11 +1000
+
 turnkey-postgresql-15.0 (1) turnkey; urgency=low
 
   * Updated PostgreSQL to latest Debian Stretch package.
