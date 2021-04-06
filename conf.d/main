@@ -2,7 +2,6 @@
 
 PGSQL_VER=$(ls /etc/postgresql/)
 
-
 # configure postgres to listen for remote connections
 CONF=/etc/postgresql/$PGSQL_VER/main/postgresql.conf
 sed --in-place "s/#listen_addresses = 'localhost'/listen_addresses = '*'/" $CONF
