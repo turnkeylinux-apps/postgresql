@@ -5,6 +5,7 @@ postgresql-13-postgis-3
 
 adminer             /* Adminer - Provides WebUI for PgSQL */
 lighttpd            /* we use lighty to power adminer */
+lighttpd-mod-openssl    /* lighty dep - req'd for https */
 php-cgi             /* needed for lighty cgi and adminer depend */
 php-pgsql           /* needed for adminer pg support */
 
