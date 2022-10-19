@@ -1,11 +1,18 @@
 turnkey-postgresql-17.0 (1) turnkey; urgency=low
 
   * Updated PostgreSQL to the latest Debian Bullseye package - v13.
+    [ Mira Heichenko <mira@turnkeylinux.org> ]
+
+  * Include lighttpd-mod-openssl module (new for Bullseye).
+
+  * Use new common make files.
+
+  * Use PHP-FPM (replaces PHP-CGI).
 
   * Note: Please refer to turnkey-core's 17.0 changelog for changes common to
     all appliances. Here we only describe changes specific to this appliance.
 
- -- Mira Heichenko <mira@turnkeylinux.org>  Fri, 13 May 2022 06:38:14 +0000
+ -- Jeremy Davis <jeremy@turnkeylinux.org>  Wed, 19 Oct 2022 08:45:59 +0000
 
 turnkey-postgresql-16.1 (1) turnkey; urgency=low
 
