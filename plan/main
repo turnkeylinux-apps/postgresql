@@ -1,12 +1,12 @@
 #include <turnkey/base>
+#include <turnkey/php-fpm>
 
-postgresql-13
-postgresql-13-postgis-3
+postgresql
+postgis
 
 adminer                 /* Adminer - Provides WebUI for PgSQL */
 lighttpd                /* we use lighty to power adminer */
 lighttpd-mod-openssl    /* lighty dep - req'd for https */
-php-fpm                 /* using php-fpm for adminer (and landing page) */
 php-pgsql               /* needed for adminer pg support */
 
 webmin-postgresql       /* webmin is in base, give the user the option */
