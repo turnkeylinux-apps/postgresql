@@ -7,7 +7,7 @@ work=/run/tkl-v19-tests/postgresql
 mkdir -p "$work"
 
 systemctl --quiet is-active postgresql.service lighttpd.service
-grep -q '\[40postgresql\] successfully completed' /var/log/inithooks.log
+grep -q '\[35pgsqlpass\] successfully completed' /var/log/inithooks.log
 curl -kfsS https://127.0.0.1/ | grep -Fq 'TurnKey PostgreSQL'
 
 export PGPASSWORD=$password
